@@ -1,0 +1,15 @@
+<h1>
+  {{title}}
+</h1>
+
+<button routerLink="/customers">Customers</button> <br><br>
+<button routerLink="/orders">Orders</button> <br><br>
+<button routerLink="">Home</button> <br><br>
+<button routerLink="/teacher">Teachers</button> <br><br>
+<button routerLink="/student">Student (Child Module)</button> <br><br>
+
+<div style="border: solid 1px black; padding:15px;">
+  <h3>Parent Component</h3> 
+  <app-student [firstName]="firstName"></app-student>
+</div>
+<router-outlet></router-outlet>
